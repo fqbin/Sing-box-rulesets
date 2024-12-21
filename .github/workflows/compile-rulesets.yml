@@ -23,7 +23,6 @@ jobs:
       - name: Update and Install Dependencies
         run: |
           sudo apt update
-          sudo apt upgrade -y
           sudo apt install -y sudo unzip curl wget
 
       # Step 3: Download the sing-box .deb package
