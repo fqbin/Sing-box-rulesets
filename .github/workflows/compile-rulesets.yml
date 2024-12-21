@@ -52,7 +52,7 @@ jobs:
       # Step 7: Commit and push changes
       - name: Commit and Push Changes to Sing-box-rulesets
         env:
-          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+          PAT_TOKEN-K: ${{ secrets.PAT_TOKEN-K }}
         run: |
           pwd  # Print current directory for debugging
           ls -la  # List files for debugging
@@ -63,7 +63,7 @@ jobs:
           # Commit only if there are changes
           if ! git diff --cached --quiet; then
             git commit -m "Auto compile and add rulesets [skip ci]"
-            git push https://${{ secrets.PAT_TOKEN }}@github.com/KexiChanProjectProxy/Sing-box-rulesets.git main
+            git push https://${{ secrets.PAT_TOKEN-K }}@github.com/KexiChanProjectProxy/Sing-box-rulesets.git main
           else
             echo "No changes to commit."
           fi
