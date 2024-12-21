@@ -46,7 +46,7 @@ jobs:
           cd Sing-box-rulesets/list
           for i in *; do
             echo "Compiling ruleset: $i"
-            sing-box ruleset compile "$i"
+            sing-box rule-set compile "$i"
           done
 
       # Step 7: Commit and push changes
