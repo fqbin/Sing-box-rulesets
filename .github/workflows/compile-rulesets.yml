@@ -54,8 +54,6 @@ jobs:
         env:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
-          cd ../..  # Navigate back to the Sing-box-rulesets repository root
-          cd Sing-box-rulesets
           pwd  # Print current directory for debugging
           ls -la  # List files for debugging
           git config --global user.name "github-actions[bot]"
