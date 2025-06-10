@@ -44,7 +44,12 @@
                 "o33249.ingest.sentry.io",
                 "events.statsigapi.net",
                 "api.mixpanel.com",
-                "browser-intake-datadoghq.com"
+                "browser-intake-datadoghq.com",
+                "gateway.icloud.com",
+                "gsas.apple.com",
+                "apple-relay.apple.com",
+                "api-glb-aapnela.smoot.apple.com",
+                "guzzoni.apple.com"
             ]
         }
     ]
